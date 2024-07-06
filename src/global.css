@@ -1,0 +1,69 @@
+@font-face {
+  font-family: "font";
+  src: url("/public/ClashDisplay-Regular.otf");
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  line-height: normal;
+}
+:root {
+  /* fonts */
+  --font-font: font;
+
+  /* font sizes */
+  --font-size-base: 16px;
+  --font-size-xl: 18px;
+  --font-size-29xl: 48px;
+  --font-size-19xl: 38px;
+  --font-size-10xl: 29px;
+  --font-size-5xl: 24px;
+  --font-size-lgi: 19px;
+  --font-size-77xl: 77px;
+
+  /* Colors */
+  --color-black: #000;
+  --color-white: #fff;
+  --color-darkgray: #999;
+  --color-lightgray: #ccc;
+  --color-gray-100: rgba(255, 255, 255, 0.1);
+  --color-gray-200: rgba(255, 255, 255, 0.25);
+  --color-gainsboro-100: #e6e6e6;
+  --color-gainsboro-200: #e1e1e1;
+  --color-gainsboro-300: rgba(230, 230, 230, 0.09);
+
+  /* Gaps */
+  --gap-base: 16px;
+  --gap-61xl: 80px;
+  --gap-21xl: 40px;
+  --gap-xl: 20px;
+  --gap-45xl: 64px;
+  --gap-13xl: 32px;
+  --gap-5xl: 24px;
+  --gap-29xl: 48px;
+  --gap-3xl: 22px;
+  --gap-5xs: 8px;
+  --gap-29xl-5: 48.5px;
+
+  /* Paddings */
+  --padding-xl: 20px;
+  --padding-8xl: 27px;
+  --padding-11xs-5: 1.5px;
+  --padding-248xl: 267px;
+  --padding-155xl: 174px;
+  --padding-9xs: 4px;
+  --padding-148xl: 167px;
+  --padding-90xl: 109px;
+  --padding-52xl: 71px;
+  --padding-12xs: 1px;
+  --padding-68xl: 87px;
+  --padding-mid: 17px;
+  --padding-10xl: 29px;
+  --padding-lgi: 19px;
+  --padding-lg: 18px;
+
+  /* Border radiuses */
+  --br-base: 16px;
+  --br-5xs: 8px;
+}

@@ -1,0 +1,63 @@
+.precisionIcon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.preciseWork {
+  margin: 0;
+  align-self: stretch;
+  height: 16px;
+  position: relative;
+  font-size: inherit;
+  line-height: 54px;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+  white-space: nowrap;
+}
+.preciseWorkWrapper,
+.precisionParent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.preciseWorkWrapper {
+  flex: 1;
+  flex-direction: column;
+  padding: var(--padding-9xs) 0 0;
+}
+.precisionParent {
+  width: 172px;
+  flex-direction: row;
+  gap: var(--gap-base);
+}
+.weUpholdThe {
+  align-self: stretch;
+  height: 35px;
+  position: relative;
+  font-size: var(--font-size-base);
+  line-height: 24px;
+  color: var(--color-lightgray);
+  display: inline-block;
+}
+.frameParent {
+  align-self: stretch;
+  border-radius: var(--br-base);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xl);
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--color-white);
+  font-family: var(--font-font);
+}
+@media screen and (max-width: 450px) {
+  .preciseWork {
+    font-size: var(--font-size-lgi);
+    line-height: 43px;
+  }
+}

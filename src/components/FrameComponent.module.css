@@ -1,0 +1,178 @@
+.frameChild {
+  height: 500px;
+  width: 1120px;
+  position: absolute;
+  margin: 0 !important;
+  right: 20px;
+  bottom: -433px;
+  border-radius: var(--br-base);
+  object-fit: contain;
+}
+.careOfYour,
+.weWillTake {
+  margin: 0;
+}
+.weWillTakeContainer {
+  margin: 0;
+  width: 354px;
+  height: 86px;
+  position: relative;
+  font-size: inherit;
+  line-height: 54px;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+  max-width: 100%;
+}
+.careValuesButton {
+  align-self: stretch;
+  height: 341px;
+  position: relative;
+  border-radius: var(--br-5xs);
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.careValuePrecision {
+  width: 448px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-45xl);
+  max-width: 100%;
+}
+.careValuesChild,
+.frameInner,
+.frameItem {
+  position: relative;
+  background-color: var(--color-gray-200);
+}
+.careValuesChild {
+  height: 491px;
+  width: 1px;
+}
+.frameInner,
+.frameItem {
+  align-self: stretch;
+  height: 1px;
+}
+.frameParent {
+  align-self: stretch;
+  backdrop-filter: blur(64px);
+  border-radius: var(--br-base);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-21xl);
+  max-width: 100%;
+}
+.getAQuote {
+  align-self: stretch;
+  height: 13px;
+  position: relative;
+  line-height: 36px;
+  display: inline-block;
+  white-space: nowrap;
+}
+.getAQuoteNowWrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-11xs-5) 0 0;
+}
+.careValuesButtonIcon {
+  height: 16px;
+  width: 16px;
+  position: relative;
+  min-height: 16px;
+}
+.careValuePrecision1,
+.frameGroup {
+  width: 173px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+  font-size: var(--font-size-xl);
+}
+.careValuePrecision1 {
+  width: 448px;
+  flex-direction: column;
+  gap: var(--gap-45xl);
+  max-width: 100%;
+  font-size: var(--font-size-5xl);
+}
+.careValues {
+  width: 1140px;
+  justify-content: space-between;
+  padding: 0 0 0 var(--padding-xl);
+  gap: var(--gap-xl);
+}
+.careValues,
+.careValuesWrapper,
+.rectangleParent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.careValuesWrapper {
+  flex: 1;
+  justify-content: flex-end;
+  padding: 0 0 var(--padding-248xl);
+}
+.rectangleParent {
+  width: 1280px;
+  justify-content: flex-start;
+  padding: 0 var(--padding-xl) 0 0;
+  position: relative;
+  text-align: left;
+  font-size: var(--font-size-29xl);
+  color: var(--color-white);
+  font-family: var(--font-font);
+}
+@media screen and (max-width: 1050px) {
+  .weWillTakeContainer {
+    font-size: var(--font-size-19xl);
+    line-height: 43px;
+  }
+  .careValuesChild {
+    width: 100%;
+    height: 1px;
+  }
+  .careValues {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 750px) {
+  .careValuesWrapper {
+    padding-bottom: var(--padding-155xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .weWillTakeContainer {
+    font-size: var(--font-size-10xl);
+    line-height: 32px;
+  }
+  .careValuePrecision {
+    gap: var(--gap-13xl);
+  }
+  .frameParent {
+    gap: var(--gap-xl);
+  }
+  .getAQuote {
+    font-size: var(--font-size-base);
+    line-height: 29px;
+  }
+  .careValuePrecision1 {
+    gap: var(--gap-13xl);
+  }
+}

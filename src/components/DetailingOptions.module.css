@@ -1,0 +1,98 @@
+.detailingOptionsChild {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  border-radius: var(--br-5xs);
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: contain;
+  z-index: 3;
+}
+.entryLevelDetail,
+.treatYourLuxury {
+  line-height: 24px;
+  display: inline-block;
+}
+.entryLevelDetail {
+  margin: 0;
+  width: 225px;
+  height: 16px;
+  position: relative;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+  z-index: 3;
+}
+.treatYourLuxury {
+  align-self: stretch;
+  height: 35px;
+}
+.arrowIcon,
+.learnMore,
+.treatYourLuxury {
+  position: relative;
+  z-index: 3;
+}
+.learnMore {
+  width: 79px;
+  line-height: 11px;
+  display: inline-block;
+  white-space: nowrap;
+}
+.arrowIcon {
+  width: 14.5px;
+  height: 10px;
+}
+.arrowWrapper,
+.detailingOptionsButtons {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.arrowWrapper {
+  flex-direction: column;
+  padding: var(--padding-12xs) 0 0;
+}
+.detailingOptionsButtons {
+  flex-direction: row;
+  gap: var(--gap-5xs);
+  color: var(--color-white);
+}
+.detailingOptionsDescriptions {
+  align-self: stretch;
+  gap: var(--gap-13xl);
+  font-size: var(--font-size-base);
+  color: var(--color-darkgray);
+}
+.detailingOptions,
+.detailingOptionsDescriptions,
+.detailingOptionsTitles {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.detailingOptionsTitles {
+  width: 320px;
+  gap: var(--gap-xl);
+}
+.detailingOptions {
+  height: 498px;
+  gap: var(--gap-13xl);
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--color-white);
+  font-family: var(--font-font);
+}
+@media screen and (max-width: 450px) {
+  .entryLevelDetail {
+    font-size: var(--font-size-lgi);
+    line-height: 19px;
+  }
+  .detailingOptions,
+  .detailingOptionsDescriptions {
+    gap: var(--gap-base);
+  }
+}
