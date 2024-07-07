@@ -1,120 +1,150 @@
 .ultimateDetailingExperience {
-  margin: 0;
-  align-self: stretch;
-  height: 45px;
-  position: relative;
-  font-size: var(--font-size-77xl);
-  line-height: 85px;
-  font-weight: 400;
-  font-family: inherit;
-  display: inline-block;
+    margin: 0;
+    align-self: stretch;
+    height: 45px;
+    position: relative;
+    font-size: var(--font-size-77xl);
+    line-height: 85px;
+    font-weight: 400;
+    font-family: inherit;
+    display: inline-block;
 }
+
 .experienceThePrestige,
 .radiatingEleganceAnd {
-  margin: 0;
+    margin: 0;
 }
+
 .experienceThePrestigeContainer {
-  height: 43px;
-  width: 470px;
-  position: relative;
-  line-height: 30px;
-  display: inline-block;
+    height: 43px;
+    width: 470px;
+    position: relative;
+    line-height: 30px;
+    display: inline-block;
 }
+
 .experienceThePrestigeOfAPWrapper {
-  align-self: stretch;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 0 var(--padding-xl);
-  color: var(--color-gainsboro-200);
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 var(--padding-xl);
+    color: var(--color-gainsboro-200);
 }
+
 .letsConnect {
-  align-self: stretch;
-  height: 13px;
-  position: relative;
-  line-height: 36px;
-  display: inline-block;
-  white-space: nowrap;
+    align-self: stretch;
+    height: 13px;
+    position: relative;
+    line-height: 36px;
+    display: inline-block;
+    white-space: nowrap;
 }
+
 .letsConnectWrapper {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: var(--padding-11xs-5) 0 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-11xs-5) 0 0;
+    position: relative;
 }
+
+.letsConnectWrapper:hover .letsConnect {
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
 .connectIcon {
-  height: 16px;
-  width: 16px;
-  position: relative;
-  min-height: 16px;
+    height: 16px;
+    width: 16px;
+    position: relative;
+    min-height: 16px;
 }
+
 .frameParent {
-  width: 142px;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-base);
+    width: 142px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-base);
 }
+
 .frameWrapper,
 .ultimateDetailingExperienceParent {
-  display: flex;
-  align-items: flex-start;
-  max-width: 100%;
+    display: flex;
+    align-items: flex-start;
+    max-width: 100%;
 }
+
 .frameWrapper {
-  width: 1196px;
-  flex-direction: row;
-  justify-content: center;
-  padding: 0 var(--padding-xl);
-  box-sizing: border-box;
-  text-align: left;
+    width: 1196px;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 var(--padding-xl);
+    box-sizing: border-box;
+    text-align: left;
 }
+
 .ultimateDetailingExperienceParent {
-  width: 1216px;
-  flex-direction: column;
-  justify-content: flex-start;
-  gap: var(--gap-29xl-5);
+    width: 1216px;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: var(--gap-29xl-5);
 }
+
 .homepageInner {
-  align-self: stretch;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 0 var(--padding-xl);
-  box-sizing: border-box;
-  max-width: 100%;
-  text-align: center;
-  font-size: var(--font-size-xl);
-  color: var(--color-white);
-  font-family: var(--font-font);
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 var(--padding-xl);
+    box-sizing: border-box;
+    max-width: 100%;
+    text-align: center;
+    font-size: var(--font-size-xl);
+    color: var(--color-white);
+    font-family: var(--font-font);
 }
+
 @media screen and (max-width: 1050px) {
-  .ultimateDetailingExperience {
-    font-size: var(--font-size-29xl);
-    line-height: 14px;
-  }
+    .ultimateDetailingExperience {
+        font-size: var(--font-size-29xl);
+        line-height: 14px;
+    }
 }
+
 @media screen and (max-width: 750px) {
-  .ultimateDetailingExperienceParent {
-    gap: var(--gap-5xl);
-  }
+    .ultimateDetailingExperienceParent {
+        gap: var(--gap-5xl);
+    }
 }
+
 @media screen and (max-width: 450px) {
-  .ultimateDetailingExperience {
-    font-size: var(--font-size-10xl);
-    line-height: 10px;
-  }
-  .experienceThePrestigeContainer,
-  .letsConnect {
-    font-size: var(--font-size-base);
-    line-height: 24px;
-  }
-  .letsConnect {
-    line-height: 29px;
-  }
+    .ultimateDetailingExperience {
+        font-size: var(--font-size-10xl);
+        line-height: 10px;
+    }
+
+    .experienceThePrestigeContainer,
+    .letsConnect {
+        font-size: var(--font-size-base);
+        line-height: 24px;
+    }
+
+    .letsConnect {
+        line-height: 29px;
+    }
 }

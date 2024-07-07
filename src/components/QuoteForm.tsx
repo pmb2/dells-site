@@ -17,16 +17,16 @@ interface QuoteFormProps {
 }
 
 const vehicleSizes: VehicleSize[] = [
-    {name: 'Small', image: '/api/placeholder/200/150', price: 100},
-    {name: 'Medium', image: '/api/placeholder/200/150', price: 150},
-    {name: 'Large', image: '/api/placeholder/200/150', price: 200},
-    {name: 'Extra Large', image: '/api/placeholder/200/150', price: 250},
+    {name: 'Small', image: '/small.png', price: 100},
+    {name: 'Medium', image: '/medium.png', price: 150},
+    {name: 'Large', image: '/large.png', price: 200},
+    {name: 'Extra Large', image: '/ex-large.png', price: 250},
 ];
 
 const soilingLevels: SoilingLevel[] = [
-    {name: 'Light', image: '/api/placeholder/200/150', price: 50},
-    {name: 'Moderate', image: '/api/placeholder/200/150', price: 100},
-    {name: 'Heavy', image: '/api/placeholder/200/150', price: 150},
+    {name: 'Light', image: '/dirty.png', price: 50},
+    {name: 'Moderate', image: '/dirtier.png', price: 100},
+    {name: 'Heavy', image: '/dirtiest.png', price: 150},
 ];
 
 const QuoteForm: React.FC<QuoteFormProps> = ({onClose}) => {
@@ -67,19 +67,27 @@ const QuoteForm: React.FC<QuoteFormProps> = ({onClose}) => {
         switch (step) {
             case 0:
                 return (
-                    <div className="space-y-4 flex flex-col items-center">
-                        <h2 className="text-2xl font-bold">Select Vehicle Size</h2>
-                        <div className="grid grid-cols-2 gap-4" align="center">
+                    <div className="space-y-4 flex flex-col items-center w-full max-w-xs" align="center">
+                        <h2 className="text-lg font-bold mb-2">Select Vehicle Size</h2>
+                        <div className="grid grid-cols-2 gap-2 w-full">
                             {vehicleSizes.map((size) => (
                                 <button
                                     key={size.name}
                                     onClick={() => handleVehicleSizeSelect(size)}
-                                    className={`p-4 border rounded-lg ${
+                                    className={`p-1 border rounded-md ${
                                         vehicleSize === size ? 'border-blue-500' : 'border-gray-300'
-                                    }`}
+                                    } flex flex-col items-center justify-center overflow-hidden`}
+                                    style={{width: '100px', height: '100px'}}
                                 >
-                                    <img src={size.image} alt={size.name} className="w-full h-auto mb-2"/>
-                                    <p>{size.name}</p>
+                                    <img
+                                        src={size.image}
+                                        alt={size.name}
+                                        className="w-full h-auto object-contain mb-1"
+                                        style={{maxHeight: '70px'}}
+                                    />
+                                    <p className="text-xs font-medium truncate w-full text-center">
+                                        {size.name}
+                                    </p>
                                 </button>
                             ))}
                         </div>
@@ -87,19 +95,22 @@ const QuoteForm: React.FC<QuoteFormProps> = ({onClose}) => {
                 );
             case 1:
                 return (
-                    <div className="space-y-4 flex flex-col items-center">
-                        <h2 className="text-2xl font-bold">Select Soiling Level</h2>
-                        <div className="grid grid-cols-3 gap-4" align="center">
+                    <div className="space-y-4 flex flex-col items-center w-full max-w-sm" align="center">
+                        <h2 className="text-xl font-bold mb-2">Select Soiling Level</h2>
+                        <div className="grid grid-cols-3 gap-3 w-full">
                             {soilingLevels.map((level) => (
                                 <button
                                     key={level.name}
                                     onClick={() => handleSoilingLevelSelect(level)}
-                                    className={`p-4 border rounded-lg ${
+                                    className={`p-2 border rounded-md ${
                                         soilingLevel === level ? 'border-blue-500' : 'border-gray-300'
-                                    }`}
+                                    } flex flex-col items-center justify-center overflow-hidden`}
+                                    style={{width: '100px', height: '100px'}}
                                 >
-                                    <img src={level.image} alt={level.name} className="w-full h-auto mb-2"/>
-                                    <p>{level.name}</p>
+                                    <img src={level.image} alt={level.name}
+                                         className="w-full h-auto object-contain mb-1"
+                                         style={{maxHeight: '70px'}}/>
+                                    <p className="text-xs font-medium truncate w-full text-center">{level.name}</p>
                                 </button>
                             ))}
                         </div>
@@ -107,17 +118,17 @@ const QuoteForm: React.FC<QuoteFormProps> = ({onClose}) => {
                 );
             case 2:
                 return (
-                    <div className="space-y-4" align="center">
-                        <h2 className="text-2xl font-bold">Special Notes</h2>
+                    <div className="space-y-4 flex flex-col items-center w-full max-w-sm" align="center">
+                        <h2 className="text-xl font-bold mb-2">Special Notes</h2>
                         <textarea
                             value={specialNotes}
                             onChange={(e) => setSpecialNotes(e.target.value)}
-                            className="w-full h-32 p-2 border rounded-lg"
+                            className="w-full h-64 p-2 border rounded-lg text-sm" style={{ height: '100px', width: '100%'}}
                             placeholder="Any special requests or notes?"
                         />
                         <button
                             onClick={handleSpecialNotesSubmit}
-                            className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg"
+                            className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg text-sm"
                         >
                             Get Quote
                         </button>
@@ -125,14 +136,14 @@ const QuoteForm: React.FC<QuoteFormProps> = ({onClose}) => {
                 );
             case 3:
                 return (
-                    <div className="space-y-4" align="center">
-                        <h2 className="text-2xl font-bold">Your Quote</h2>
-                        <p className="text-xl">Estimated Price: ${quote}</p>
-                        <p>Please select a date and time for your appointment:</p>
+                    <div className="space-y-4 flex flex-col items-center w-full max-w-sm" align="center">
+                        <h2 className="text-xl font-bold mb-2">Your Quote</h2>
+                        <p className="text-lg">Estimated Price: ${quote}</p>
+                        <p className="text-sm">Please select a date and time for your appointment:</p>
                         <div
                             className="calendly-inline-widget"
-                            data-url="https://calendly.com/your-account"
-                            style={{minWidth: '320px', height: '630px'}}
+                            data-url="https://calendly.com/backusagency/30min"
+                            style={{minWidth: '100%', height: '450px'}}
                         />
                     </div>
                 );
@@ -142,7 +153,7 @@ const QuoteForm: React.FC<QuoteFormProps> = ({onClose}) => {
     };
 
     return (
-        <div className="p-8" align="center">
+        <div className="space-y-4 flex flex-col items-center">
             {renderStep()}
         </div>
     );

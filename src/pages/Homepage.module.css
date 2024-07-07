@@ -1,552 +1,657 @@
 .homepageChild {
-  align-self: stretch;
-  height: 844px;
-  position: relative;
-  background-color: var(--color-black);
-  display: none;
+    align-self: stretch;
+    height: 844px;
+    position: relative;
+    background-color: var(--color-black);
+    display: none;
 }
+
 .frameChild {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  margin: 0 !important;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  border-radius: var(--br-5xs);
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%;
-  object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: 0 !important;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: var(--br-5xs);
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
 }
+
 .frameItem {
-  height: 48px;
-  width: 48px;
-  position: relative;
-  z-index: 1;
+    height: 48px;
+    width: 48px;
+    position: relative;
+    z-index: 1;
 }
+
 .frameWrapper {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-end;
-  padding: 0 34px 0 36px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 0 34px 0 36px;
 }
+
 .playShowreel {
-  width: 118px;
-  height: 13px;
-  position: relative;
-  line-height: 54px;
-  display: inline-block;
-  min-width: 118px;
-  z-index: 1;
+    width: 118px;
+    height: 13px;
+    position: relative;
+    line-height: 54px;
+    display: inline-block;
+    min-width: 118px;
+    z-index: 1;
 }
+
 .homepageInner,
 .rectangleParent {
-  display: flex;
-  box-sizing: border-box;
-  max-width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    max-width: 100%;
 }
+
 .rectangleParent {
-  width: 1120px;
-  box-shadow: 0 4px 16px rgba(255, 255, 255, 0.1);
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 258px 22px 257px var(--padding-xl);
-  position: relative;
-  gap: var(--gap-5xl);
+    width: 1120px;
+    box-shadow: 0 4px 16px rgba(255, 255, 255, 0.1);
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 258px 22px 257px var(--padding-xl);
+    position: relative;
+    gap: var(--gap-5xl);
 }
+
 .homepageInner {
-  align-self: stretch;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 0 var(--padding-xl) var(--padding-148xl);
-  text-align: center;
-  font-size: var(--font-size-xl);
-  color: var(--color-white);
-  font-family: var(--font-font);
+    align-self: stretch;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 var(--padding-xl) var(--padding-148xl);
+    text-align: center;
+    font-size: var(--font-size-xl);
+    color: var(--color-white);
+    font-family: var(--font-font);
 }
+
 .bookYourLuxury,
 .carDetailingToday {
-  margin: 0;
+    margin: 0;
 }
+
 .bookYourLuxuryContainer,
 .clickTheLink {
-  position: relative;
-  display: inline-block;
-  z-index: 1;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
 }
+
 .bookYourLuxuryContainer {
-  margin: 0;
-  align-self: stretch;
-  height: 86px;
-  font-size: inherit;
-  line-height: 54px;
-  font-weight: 400;
-  font-family: inherit;
-  width: 125%;
+    margin: 0;
+    align-self: stretch;
+    height: 86px;
+    font-size: inherit;
+    line-height: 54px;
+    font-weight: 400;
+    font-family: inherit;
+    width: 125%;
 }
+
 .clickTheLink {
-  width: 348px;
-  height: 35px;
-  font-size: var(--font-size-base);
-  line-height: 24px;
-  color: var(--color-lightgray);
-  max-width: 100%;
+    width: 348px;
+    height: 35px;
+    font-size: var(--font-size-base);
+    line-height: 24px;
+    color: var(--color-lightgray);
+    max-width: 100%;
 }
+
 .bookYourLuxuryCarDetailingParent {
-  align-self: stretch;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-21xl);
-  max-width: 100%;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-21xl);
+    max-width: 100%;
 }
+
 .getAQuote {
-  align-self: stretch;
-  height: 13px;
-  position: relative;
-  line-height: 36px;
-  display: inline-block;
-  white-space: nowrap;
-  z-index: 1;
+    align-self: stretch;
+    height: 13px;
+    position: relative;
+    line-height: 36px;
+    display: inline-block;
+    white-space: nowrap;
+    z-index: 1;
 }
+
 .getAQuoteNowWrapper {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: var(--padding-11xs-5) 0 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-11xs-5) 0 0;
+    position: relative;
 }
+
+.getAQuoteNowWrapper:hover .getAQuote {
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
 .bookingButtonIcon {
-  height: 16px;
-  width: 16px;
-  position: relative;
-  min-height: 16px;
-  z-index: 1;
+    height: 16px;
+    width: 16px;
+    position: relative;
+    min-height: 16px;
+    z-index: 1;
 }
+
 .frameGroup {
-  width: 173px;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-base);
-  font-size: var(--font-size-xl);
+    width: 173px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-base);
+    font-size: var(--font-size-xl);
 }
+
 .frameDiv,
 .frameParent {
-  display: flex;
-  align-items: flex-start;
-  max-width: 100%;
+    display: flex;
+    align-items: flex-start;
+    max-width: 100%;
 }
+
 .frameParent {
-  width: 377px;
-  flex-direction: column;
-  justify-content: flex-start;
-  gap: var(--gap-29xl);
+    width: 377px;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: var(--gap-29xl);
 }
+
 .frameDiv {
-  width: 785px;
-  flex-direction: row;
-  justify-content: center;
-  padding: 0 var(--padding-xl) 222px;
-  box-sizing: border-box;
+    width: 785px;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 var(--padding-xl) 222px;
+    box-sizing: border-box;
 }
+
 .promptLuxuryDetailing {
-  width: 210px;
-  height: 13px;
-  position: relative;
-  line-height: 30px;
-  display: inline-block;
+    width: 210px;
+    height: 13px;
+    position: relative;
+    line-height: 30px;
+    display: inline-block;
 }
+
 .experienceThePrestige {
-  align-self: stretch;
-  height: 55px;
-  position: relative;
-  font-size: var(--font-size-base);
-  line-height: 22px;
-  color: var(--color-darkgray);
-  text-align: left;
-  display: inline-block;
+    align-self: stretch;
+    height: 55px;
+    position: relative;
+    font-size: var(--font-size-base);
+    line-height: 22px;
+    color: var(--color-darkgray);
+    text-align: left;
+    display: inline-block;
 }
+
 .promptLuxuryDetailingParent {
-  width: 352px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-13xl);
-  min-width: 352px;
-  max-width: 100%;
+    width: 352px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-13xl);
+    min-width: 352px;
+    max-width: 100%;
 }
+
 .website {
-  height: 11px;
-  position: relative;
-  line-height: 30px;
-  display: inline-block;
-  min-width: 54px;
+    height: 11px;
+    position: relative;
+    line-height: 30px;
+    display: inline-block;
+    min-width: 54px;
 }
+
 .services {
-  min-width: 58px;
+    min-width: 58px;
 }
+
 .about,
 .pricing,
 .services {
-  height: 11px;
-  position: relative;
-  line-height: 30px;
-  display: inline-block;
+    height: 11px;
+    position: relative;
+    line-height: 30px;
+    display: inline-block;
 }
+
 .pricing {
-  width: 48px;
+    width: 48px;
 }
+
 .about {
-  min-width: 41px;
+    min-width: 41px;
 }
+
 .footerLinksColumns,
 .websiteContact {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
+
 .websiteContact {
-  align-self: stretch;
-  gap: var(--gap-5xl);
-  color: var(--color-white);
+    align-self: stretch;
+    gap: var(--gap-5xl);
+    color: var(--color-white);
 }
+
 .footerLinksColumns {
-  width: 91px;
-  padding: 0 33px 0 0;
-  box-sizing: border-box;
-  gap: var(--gap-13xl);
+    width: 91px;
+    padding: 0 33px 0 0;
+    box-sizing: border-box;
+    gap: var(--gap-13xl);
 }
+
 .contact {
-  height: 11px;
-  position: relative;
-  line-height: 30px;
-  display: inline-block;
-  min-width: 55px;
+    height: 11px;
+    position: relative;
+    line-height: 30px;
+    display: inline-block;
+    min-width: 55px;
 }
+
 .getAQuote1 {
-  width: 80px;
+    width: 80px;
 }
+
 .contactForm,
 .emailUs,
 .getAQuote1 {
-  height: 30px;
-  position: relative;
-  line-height: 18px;
-  display: inline-block;
+    height: 30px;
+    position: relative;
+    line-height: 18px;
+    display: inline-block;
 }
+
 .contactForm {
-  align-self: stretch;
-  white-space: nowrap;
+    align-self: stretch;
+    white-space: nowrap;
 }
+
 .emailUs {
-  min-width: 58px;
+    min-width: 58px;
 }
+
 .footerLinksColumns1,
 .getAQuoteParent {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
+
 .getAQuoteParent {
-  align-self: stretch;
-  gap: var(--gap-5xl);
-  color: var(--color-white);
+    align-self: stretch;
+    gap: var(--gap-5xl);
+    color: var(--color-white);
 }
+
 .footerLinksColumns1 {
-  width: 91px;
-  gap: var(--gap-13xl);
+    width: 91px;
+    gap: var(--gap-13xl);
 }
+
 .socialMedia {
-  align-self: stretch;
-  height: 11px;
-  position: relative;
-  line-height: 30px;
-  display: inline-block;
-  white-space: nowrap;
+    align-self: stretch;
+    height: 11px;
+    position: relative;
+    line-height: 30px;
+    display: inline-block;
+    white-space: nowrap;
 }
+
 .facebook {
-  width: 65px;
+    width: 65px;
 }
+
 .facebook,
 .instagram,
 .twitter,
 .youtube {
-  height: 11px;
-  position: relative;
-  line-height: 30px;
-  display: inline-block;
+    height: 11px;
+    position: relative;
+    line-height: 30px;
+    display: inline-block;
 }
+
 .instagram {
-  align-self: stretch;
+    align-self: stretch;
 }
+
 .twitter,
 .youtube {
-  min-width: 49px;
+    min-width: 49px;
 }
+
 .youtube {
-  min-width: 56px;
+    min-width: 56px;
 }
+
 .socialIcons,
 .socialMediaTitle {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
+
 .socialIcons {
-  width: 69px;
-  gap: var(--gap-5xl);
-  color: var(--color-white);
+    width: 69px;
+    gap: var(--gap-5xl);
+    color: var(--color-white);
 }
+
 .socialMediaTitle {
-  width: 86px;
-  gap: var(--gap-13xl);
+    width: 86px;
+    gap: var(--gap-13xl);
 }
+
 .footerLinksContent {
-  align-self: stretch;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: var(--gap-xl);
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: var(--gap-xl);
 }
+
 .footerLinksContentWrapper {
-  width: 470px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 2px 0 0;
-  box-sizing: border-box;
-  min-width: 470px;
-  max-width: 100%;
-  text-align: left;
-  font-size: var(--font-size-base);
-  color: var(--color-darkgray);
+    width: 470px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 2px 0 0;
+    box-sizing: border-box;
+    min-width: 470px;
+    max-width: 100%;
+    text-align: left;
+    font-size: var(--font-size-base);
+    color: var(--color-darkgray);
 }
+
 .frameParent1,
 .frameWrapper1 {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    max-width: 100%;
 }
+
 .frameParent1 {
-  flex: 1;
-  justify-content: space-between;
-  gap: var(--gap-xl);
+    flex: 1;
+    justify-content: space-between;
+    gap: var(--gap-xl);
 }
+
 .frameWrapper1 {
-  width: 1100px;
-  justify-content: flex-start;
-  padding: 0 var(--padding-8xl);
-  box-sizing: border-box;
+    width: 1100px;
+    justify-content: flex-start;
+    padding: 0 var(--padding-8xl);
+    box-sizing: border-box;
 }
+
 .footerWrapperInner,
 .frameInner {
-  align-self: stretch;
-  max-width: 100%;
+    align-self: stretch;
+    max-width: 100%;
 }
+
 .frameInner {
-  flex: 1;
-  position: relative;
-  background-color: #555;
+    flex: 1;
+    position: relative;
+    background-color: #555;
 }
+
 .footerWrapperInner {
-  height: 1px;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 0 0 0 var(--padding-8xl);
-  box-sizing: border-box;
+    height: 1px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 0 0 var(--padding-8xl);
+    box-sizing: border-box;
 }
+
 .cookiePolicy,
 .privacyPolicy,
 .promptLuxuryDetailing1,
 .termsOfService {
-  width: 223px;
-  position: relative;
-  line-height: 11px;
-  display: inline-block;
-  white-space: nowrap;
+    width: 223px;
+    position: relative;
+    line-height: 11px;
+    display: inline-block;
+    white-space: nowrap;
 }
+
 .cookiePolicy,
 .privacyPolicy,
 .termsOfService {
-  width: 92px;
+    width: 92px;
 }
+
 .privacyPolicy,
 .termsOfService {
-  width: 113px;
+    width: 113px;
 }
+
 .privacyPolicy {
-  width: 96px;
+    width: 96px;
 }
+
 .legalLinks {
-  flex-direction: row;
-  justify-content: center;
-  gap: var(--gap-13xl);
-  text-align: left;
+    flex-direction: row;
+    justify-content: center;
+    gap: var(--gap-13xl);
+    text-align: left;
 }
+
 .footerDetails,
 .footerWrapper,
 .frameContainer,
 .legalLinks {
-  display: flex;
-  align-items: flex-start;
-  max-width: 100%;
+    display: flex;
+    align-items: flex-start;
+    max-width: 100%;
 }
+
 .footerDetails {
-  width: 1106px;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: var(--gap-xl);
+    width: 1106px;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: var(--gap-xl);
 }
+
 .footerWrapper,
 .frameContainer {
-  flex-direction: column;
-  justify-content: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
 }
+
 .footerWrapper {
-  align-self: stretch;
-  gap: var(--gap-45xl);
-  font-size: var(--font-size-base);
+    align-self: stretch;
+    gap: var(--gap-45xl);
+    font-size: var(--font-size-base);
 }
+
 .frameContainer {
-  width: 1147px;
-  gap: var(--gap-61xl);
+    width: 1147px;
+    gap: var(--gap-61xl);
 }
+
 .frameFooter,
 .homepage {
-  display: flex;
-  align-items: flex-start;
-  box-sizing: border-box;
-  color: var(--color-white);
-  font-family: var(--font-font);
+    display: flex;
+    align-items: flex-start;
+    box-sizing: border-box;
+    color: var(--color-white);
+    font-family: var(--font-font);
 }
+
 .frameFooter {
-  width: 1373px;
-  flex-direction: row;
-  justify-content: center;
-  padding: 0 var(--padding-xl);
-  max-width: 100%;
-  text-align: center;
-  font-size: var(--font-size-xl);
+    width: 1373px;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 var(--padding-xl);
+    max-width: 100%;
+    text-align: center;
+    font-size: var(--font-size-xl);
 }
+
 .homepage {
-  width: 100%;
-  position: relative;
-  background-color: var(--color-black);
-  overflow: hidden;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding: 24px 0 64px;
-  gap: 33px;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: left;
-  font-size: var(--font-size-29xl);
+    width: 100%;
+    position: relative;
+    background-color: var(--color-black);
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 24px 0 64px;
+    gap: 33px;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    font-size: var(--font-size-29xl);
 }
+
 @media screen and (max-width: 1200px) {
-  .footerWrapper {
-    gap: var(--gap-13xl);
-  }
-  .frameContainer {
-    gap: var(--gap-21xl);
-  }
+    .footerWrapper {
+        gap: var(--gap-13xl);
+    }
+
+    .frameContainer {
+        gap: var(--gap-21xl);
+    }
 }
+
 @media screen and (max-width: 1050px) {
-  .homepageInner {
-    padding-bottom: var(--padding-90xl);
-    box-sizing: border-box;
-  }
-  .bookYourLuxuryContainer {
-    font-size: var(--font-size-19xl);
-    line-height: 43px;
-  }
-  .footerLinksContentWrapper,
-  .promptLuxuryDetailingParent {
-    flex: 1;
-  }
-  .frameParent1 {
-    flex-wrap: wrap;
-  }
+    .homepageInner {
+        padding-bottom: var(--padding-90xl);
+        box-sizing: border-box;
+    }
+
+    .bookYourLuxuryContainer {
+        font-size: var(--font-size-19xl);
+        line-height: 43px;
+    }
+
+    .footerLinksContentWrapper,
+    .promptLuxuryDetailingParent {
+        flex: 1;
+    }
+
+    .frameParent1 {
+        flex-wrap: wrap;
+    }
 }
+
 @media screen and (max-width: 750px) {
-  .rectangleParent {
-    padding-top: 168px;
-    padding-bottom: var(--padding-148xl);
-    box-sizing: border-box;
-  }
-  .footerLinksContentWrapper,
-  .promptLuxuryDetailingParent {
-    min-width: 100%;
-  }
-  .footerDetails {
-    flex-wrap: wrap;
-  }
-  .footerWrapper {
-    gap: var(--gap-base);
-  }
-  .frameContainer {
-    gap: var(--gap-xl);
-  }
-  .homepage {
-    gap: var(--gap-base);
-  }
+    .rectangleParent {
+        padding-top: 168px;
+        padding-bottom: var(--padding-148xl);
+        box-sizing: border-box;
+    }
+
+    .footerLinksContentWrapper,
+    .promptLuxuryDetailingParent {
+        min-width: 100%;
+    }
+
+    .footerDetails {
+        flex-wrap: wrap;
+    }
+
+    .footerWrapper {
+        gap: var(--gap-base);
+    }
+
+    .frameContainer {
+        gap: var(--gap-xl);
+    }
+
+    .homepage {
+        gap: var(--gap-base);
+    }
 }
+
 @media screen and (max-width: 450px) {
-  .playShowreel {
-    font-size: var(--font-size-base);
-    line-height: 43px;
-  }
-  .homepageInner {
-    padding-bottom: var(--padding-52xl);
-    box-sizing: border-box;
-  }
-  .bookYourLuxuryContainer {
-    font-size: var(--font-size-10xl);
-    line-height: 32px;
-  }
-  .bookYourLuxuryCarDetailingParent {
-    gap: var(--gap-xl);
-  }
-  .getAQuote {
-    font-size: var(--font-size-base);
-    line-height: 29px;
-  }
-  .frameParent {
-    gap: var(--gap-5xl);
-  }
-  .frameDiv {
-    padding-bottom: 144px;
-    box-sizing: border-box;
-  }
-  .promptLuxuryDetailing {
-    font-size: var(--font-size-base);
-    line-height: 24px;
-  }
-  .promptLuxuryDetailingParent {
-    gap: var(--gap-base);
-  }
-  .footerLinksContent,
-  .legalLinks {
-    flex-wrap: wrap;
-  }
-  .legalLinks {
-    gap: var(--gap-base);
-  }
+    .playShowreel {
+        font-size: var(--font-size-base);
+        line-height: 43px;
+    }
+
+    .homepageInner {
+        padding-bottom: var(--padding-52xl);
+        box-sizing: border-box;
+    }
+
+    .bookYourLuxuryContainer {
+        font-size: var(--font-size-10xl);
+        line-height: 32px;
+    }
+
+    .bookYourLuxuryCarDetailingParent {
+        gap: var(--gap-xl);
+    }
+
+    .getAQuote {
+        font-size: var(--font-size-base);
+        line-height: 29px;
+    }
+
+    .frameParent {
+        gap: var(--gap-5xl);
+    }
+
+    .frameDiv {
+        padding-bottom: 144px;
+        box-sizing: border-box;
+    }
+
+    .promptLuxuryDetailing {
+        font-size: var(--font-size-base);
+        line-height: 24px;
+    }
+
+    .promptLuxuryDetailingParent {
+        gap: var(--gap-base);
+    }
+
+    .footerLinksContent,
+    .legalLinks {
+        flex-wrap: wrap;
+    }
+
+    .legalLinks {
+        gap: var(--gap-base);
+    }
 }

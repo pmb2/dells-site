@@ -24,7 +24,7 @@ function App() {
 
         switch (pathname) {
             case "/":
-                title = "Luxury Car Detailing";
+                title = "Prompt Luxury Detailing";
                 metaDescription = "Experience premium car detailing services for your luxury vehicle.";
                 break;
             default:
